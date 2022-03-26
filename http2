@@ -1,0 +1,37 @@
+### GET requete sans filtrage
+GET https://http-practice.herokuapp.com/status
+### GET requete page &langage
+https://http-practice.herokuapp.com/wilders/?language=PHP&page=2
+
+### POST JSON
+POST https://http-practice.herokuapp.com/wilders/
+Content-Type: application/json
+
+{
+    "name": "Tokyo Hotel",
+    "language": "PHP"
+}
+
+### POST URL-Encoded
+POST https://http-pratice.herokuapp.com/wilders/
+Content-Type: application/x-www-form-urlencoded
+
+
+name=John%20Doe&language=PHP
+
+
+###GET wilder créé
+GET https://http-pratice.herokuapp.com/wilders/1646120/
+
+### PUT MAJ wilder
+PUT https://http-practice.herokuapp.com/wilders/1646121
+Content-Type: application/json
+
+{
+    "name": "Bill Hotel",
+    "language": "PHP"
+}
+
+### DELETE 
+DELETE https://http-practice.herokuapp.com/wilders/1646121
+Content-Type: application/json
